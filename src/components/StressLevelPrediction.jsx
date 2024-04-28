@@ -14,7 +14,7 @@ function StressLevelPrediction() {
 
     // Create the data object to send to the API
     const requestData = {
-      humadity: parseFloat(humidity),
+      humidity: parseFloat(humidity),
       Temperature: parseFloat(temperature),
       step_count: parseInt(stepCount, 10),
     };
