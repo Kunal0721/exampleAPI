@@ -39,7 +39,7 @@ function Chatbot() {
 
   return (
     <div>
-      <h1>Anxiety Level Prediction</h1>
+      <h1>Chat Bot</h1>
 
       <form onSubmit={handleSubmit}>
         <div>
@@ -51,9 +51,9 @@ function Chatbot() {
             required
           />
         </div>
-        <button type="submit">Predict</button>
+        <button type="submit">Chat</button>
       </form>
-      {response && <h2>Response  : {response}</h2>}
+      {response && <h2> {response}</h2>}
 
       {error && (
         <div style={{ color: "red" }}>
