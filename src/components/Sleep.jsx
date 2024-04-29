@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 
 function Sleep() {
    // Define state variables for form inputs and prediction result
-   const [sleep_durations, setsleep_durations] = useState("");
-   const [efficiency, setefficiency] = useState("");
-   const [disturbance, setdisturbance] = useState("");
+   const [sleep_duration, setsleep_duration] = useState("");
+   const [sleep_efficiency, setsleep_efficiency] = useState("");
+   const [sleep_disturbance, setsleep_disturbance] = useState("");
    const [prediction, setPrediction] = useState("");
    const [error, setError] = useState("");
  
@@ -14,9 +14,9 @@ function Sleep() {
  
      // Create the data object to send to the API
      const requestData = {
-        sleep_durations: parseFloat(sleep_durations),
-        efficiency: parseFloat(efficiency),
-        disturbance: parseInt(disturbance, 10),
+        sleep_duration: parseFloat(sleep_duration),
+        sleep_efficiency: parseFloat(sleep_efficiency),
+        sleep_disturbance: parseInt(sleep_disturbance, 10),
      };
  
      try {
@@ -58,28 +58,28 @@ function Sleep() {
            <label>Sleep Duration : </label>
            <input
              type="text"
-             value={sleep_durations}
-             onChange={(e) => setsleep_durations(e.target.value)}
+             value={sleep_duration}
+             onChange={(e) => setsleep_duration(e.target.value)}
              required
            />
          </div>
  
          <div>
-           <label>Sleep Efficiency : </label>
+           <label>Sleep sleep_efficiency : </label>
            <input
              type="text"
-             value={efficiency}
-             onChange={(e) => setefficiency(e.target.value)}
+             value={sleep_efficiency}
+             onChange={(e) => setsleep_efficiency(e.target.value)}
              required
            />
          </div>
  
          <div>
-           <label>Sleep Disturbance : </label>
+           <label>Sleep sleep_disturbance : </label>
            <input
              type="text"
-             value={disturbance}
-             onChange={(e) => setdisturbance(e.target.value)}
+             value={sleep_disturbance}
+             onChange={(e) => setsleep_disturbance(e.target.value)}
              required
            />
          </div>
