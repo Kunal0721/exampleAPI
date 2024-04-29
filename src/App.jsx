@@ -2,6 +2,7 @@
 import './App.css'
 import AnxietyLevel from './components/AnxietyLevel'
 import Chatbot from './components/Chatbot'
+import Sleep from './components/Sleep'
 import StressLevelPrediction from './components/StressLevelPrediction'
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
     <>
      {/* <StressLevelPrediction/>
      <AnxietyLevel/> */}
-     <Chatbot/>
+     {/* <Chatbot/> */}
+     <Sleep/>
     </>
   )
 }
